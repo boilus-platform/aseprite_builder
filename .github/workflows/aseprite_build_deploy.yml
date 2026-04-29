@@ -113,6 +113,6 @@ jobs:
         run: 7z -tzip a Aseprite-${{ needs.check-version.outputs.latest_tag }}-${{ runner.os }}.zip *
       - name: Upload CTFAK (release)
         uses: actions/upload-artifact@v4
-    with:
-        name: skibidi banban
-        path: aseprite/build/bin/Aseprite-${{ needs.check-version.outputs.latest_tag }}-${{ runner.os }}.zip
+        with:
+         name: skibidi banban
+         path: aseprite/build/bin/Aseprite-${{ needs.check-version.outputs.latest_tag }}-${{ runner.os }}.zip
